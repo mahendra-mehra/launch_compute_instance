@@ -62,6 +62,9 @@
           name: "my_test_instance"
           image_id: "{{ instance_image }}"
           shape: "{{ instance_shape }}"
+          shape_config:
+              ocpus: 1
+              memory_in_gbs: 6
           create_vnic_details:
               assign_public_ip: True
               hostname_label: "{{ instance_hostname }}"
